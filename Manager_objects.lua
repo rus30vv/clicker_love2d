@@ -7,6 +7,21 @@ Unit = require "Unit"
 --dofile(AnAl.lua)
 --playr = playr
 dofile("AnAL.lua")--test_git fetch
+
+
+local function collide(x1, y1, r1, x, y, r)
+  local distance = (x - x1) ^ 2 + (y - y1) ^ 2
+	local rdist = (r1 + r) ^ 2
+		if distance < rdist	then
+			-- 
+			print('collision'
+			--	
+		end
+
+	return distance < rdist
+end
+
+
 	manager_objects = Object:extend()
 		 
 		local Curs = Curs()
